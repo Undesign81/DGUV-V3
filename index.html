@@ -15,12 +15,13 @@ body{
   color:#333;
 }
 
+/* Header mit Animationen */
 header{
   background:#ffffff;
   padding:20px 40px;
   display:flex;
   align-items:center;
-  justify-content:center; /* Logo + Text zentriert */
+  justify-content:center;
   gap:20px;
   border-bottom:3px solid #27ae60;
 }
@@ -28,6 +29,7 @@ header{
 header img{
   max-width:150px;
   height:auto;
+  animation: slideIn 1s ease-out forwards;
 }
 
 header h1{
@@ -35,8 +37,21 @@ header h1{
   font-size:1.8em;
   margin:0;
   text-align:left;
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
+/* Animationen */
+@keyframes slideIn {
+  0% { transform: translateX(-50px); opacity:0; }
+  100% { transform: translateX(0); opacity:1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+
+/* Content Bereich */
 section{
   max-width:900px;
   margin:auto;
