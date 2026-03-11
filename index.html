@@ -16,21 +16,24 @@ body{
 }
 
 header{
-  text-align:center;
-  padding:30px 20px;
-  background:#0a3d62;
+  background:#ffffff;
+  padding:20px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:20px;
+  border-bottom:3px solid #27ae60;
 }
 
 header img{
-  max-width:300px;
+  max-width:150px;
   height:auto;
-  margin-bottom:10px;
 }
 
-header p{
-  color:white;
-  font-size:1.2em;
-  margin-top:10px;
+header h1{
+  color:#0a3d62;
+  font-size:1.8em;
+  margin:0;
 }
 
 section{
@@ -90,14 +93,26 @@ footer{
   color:#27ae60;
   font-weight:bold;
 }
+
+/* Responsive Anpassungen */
+@media (max-width:600px){
+  header{
+    flex-direction: column;
+    text-align:center;
+    gap:10px;
+  }
+  header h1{
+    font-size:1.5em;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<header style="text-align:center; padding:30px 20px; background:#0a3d62;">
-  <img src="logo_dguvundesign.png" alt="DGUV Undesign Logo" style="max-width:300px; height:auto; margin-bottom:10px;">
-  <p style="color:white; font-size:1.2em; margin-top:10px;">DGUV V3 Prüfung in Moers – Elektrische Geräte prüfen</p>
+<header>
+  <img src="logo_dguvundesign.png" alt="DGUV Undesign Logo">
+  <h1>DGUV V3 Prüfung in Moers – Elektrische Geräte prüfen</h1>
 </header>
 
 <section>
