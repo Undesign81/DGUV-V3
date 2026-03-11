@@ -170,19 +170,21 @@ footer{
 <h2>Unverbindliche Anfrage</h2>
 <p>Füllen Sie einfach das Formular aus. Wir melden uns zeitnah mit einem Angebot.</p>
 
-<form action="mailto:dguv.undesign@gmail.com" method="post" enctype="text/plain">
-<label>Firma</label>
-<input type="text" name="firma" required>
-<label>Name</label>
-<input type="text" name="name" required>
-<label>Email</label>
-<input type="email" name="email" required>
-<label>Ungefähre Anzahl der Geräte</label>
-<input type="text" name="geraete">
-<label>Nachricht</label>
-<textarea name="nachricht" rows="4"></textarea>
-<br><br>
-<button type="submit">Anfrage senden</button>
+<form action="https://formsubmit.co/dguv.undesign@gmail.com" method="POST">
+  <input type="text" name="firma" placeholder="Firma" required>
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="geraete" placeholder="Ungefähre Anzahl der Geräte">
+  <textarea name="nachricht" placeholder="Nachricht" rows="4"></textarea>
+  
+  <!-- Optional: Captcha deaktivieren -->
+  <input type="hidden" name="_captcha" value="false">
+  
+  <!-- Optional: Erfolgsnachricht-Seite -->
+  <input type="hidden" name="_next" value="https://DEINUSERNAME.github.io/dguv-pruefung/danke.html">
+  
+  <br><br>
+  <button type="submit">Anfrage senden</button>
 </form>
 </div>
 
