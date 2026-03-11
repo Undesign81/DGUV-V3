@@ -15,7 +15,7 @@ body{
   color:#333;
 }
 
-/* Header mit Animationen */
+/* Header */
 header{
   background:#ffffff;
   padding:20px 40px;
@@ -41,15 +41,8 @@ header h1{
 }
 
 /* Animationen */
-@keyframes slideIn {
-  0% { transform: translateX(-50px); opacity:0; }
-  100% { transform: translateX(0); opacity:1; }
-}
-
-@keyframes fadeIn {
-  0% { opacity:0; }
-  100% { opacity:1; }
-}
+@keyframes slideIn {0% {transform: translateX(-50px); opacity:0;}100% {transform: translateX(0); opacity:1;}}
+@keyframes fadeIn {0% {opacity:0;}100% {opacity:1;}}
 
 /* Content Bereich */
 section{
@@ -58,9 +51,7 @@ section{
   padding:40px 20px;
 }
 
-h2{
-  color:#0a3d62;
-}
+h2{color:#0a3d62;}
 
 .box{
   background:white;
@@ -70,9 +61,7 @@ h2{
   box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
-ul{
-  padding-left:20px;
-}
+ul{padding-left:20px;}
 
 button{
   background:#27ae60;
@@ -84,9 +73,7 @@ button{
   cursor:pointer;
 }
 
-button:hover{
-  background:#1e8449;
-}
+button:hover{background:#1e8449;}
 
 input, textarea{
   width:100%;
@@ -117,9 +104,7 @@ footer{
     text-align:center;
     gap:10px;
   }
-  header h1{
-    font-size:1.5em;
-  }
+  header h1{font-size:1.5em;}
 }
 </style>
 </head>
@@ -166,26 +151,28 @@ footer{
 </ul>
 </div>
 
+<!-- Sicheres Inline-Formular -->
 <div class="box">
 <h2>Unverbindliche Anfrage</h2>
 <p>Füllen Sie einfach das Formular aus. Wir melden uns zeitnah mit einem Angebot.</p>
 
-<form action="https://formsubmit.co/dguv.undesign@gmail.com" method="POST">
+<form id="contactForm" action="https://formsubmit.co/dguv.undesign@gmail.com" method="POST">
   <input type="text" name="firma" placeholder="Firma" required>
   <input type="text" name="name" placeholder="Name" required>
   <input type="email" name="email" placeholder="Email" required>
   <input type="text" name="geraete" placeholder="Ungefähre Anzahl der Geräte">
   <textarea name="nachricht" placeholder="Nachricht" rows="4"></textarea>
   
-  <!-- Optional: Captcha deaktivieren -->
   <input type="hidden" name="_captcha" value="false">
-  
-  <!-- Optional: Erfolgsnachricht-Seite -->
-  <input type="hidden" name="_next" value="https://DEINUSERNAME.github.io/dguv-pruefung/danke.html">
   
   <br><br>
   <button type="submit">Anfrage senden</button>
 </form>
+
+<p id="formMessage" style="display:none; color:#27ae60; font-weight:bold; margin-top:15px;">
+Vielen Dank für Ihre Anfrage! Wir melden uns so schnell wie möglich bei Ihnen.
+</p>
+
 </div>
 
 <div class="box">
@@ -213,6 +200,31 @@ footer{
 <footer>
 © 2026 DGUV Undesign | Moers
 </footer>
+
+<script>
+const form = document.getElementById('contactForm');
+const message = document.getElementById('formMessage');
+
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: {'Accept':'application/json'}
+  }).then(response => {
+    if(response.ok){
+      message.style.display='block';
+      form.reset();
+    } else {
+      alert('Ups! Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
+    }
+  }).catch(error => {
+    alert('Ups! Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
+  });
+});
+</script>
 
 </body>
 </html>
