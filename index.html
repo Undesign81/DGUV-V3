@@ -11,89 +11,108 @@
 <style>
 
 body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f4f6f8;
-color:#333;
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:#f4f6f8;
+  color:#333;
 }
 
 /* HEADER */
 
 header{
-background:white;
-padding:30px;
-display:flex;
-align-items:center;
-justify-content:center;
-gap:25px;
-border-bottom:3px solid #27ae60;
+  background:white;
+  padding:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:25px;
+  border-bottom:3px solid #27ae60;
 }
 
 header img{
-height:120px;
+  height:120px;
 }
 
 header h1{
-margin:0;
-color:#0a3d62;
-font-size:28px;
+  margin:0;
+  color:#0a3d62;
+  font-size:28px;
 }
 
 /* CONTENT */
 
 section{
-max-width:900px;
-margin:auto;
-padding:40px 20px;
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
 }
 
 h2{
-color:#0a3d62;
+  color:#0a3d62;
+  margin-bottom:15px;
 }
 
 .box{
-background:white;
-padding:30px;
-margin-top:20px;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
+  background:white;
+  padding:30px;
+  margin-top:30px;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.12);
 }
 
-ul{
-padding-left:20px;
+.box h2{
+  background:#27ae60;
+  color:white;
+  padding:10px 15px;
+  border-radius:8px;
+}
+
+/* INPUT & BUTTONS */
+
+input, textarea{
+  width:100%;
+  padding:14px;
+  margin-top:10px;
+  border-radius:5px;
+  border:1px solid #ccc;
+  box-sizing:border-box;
+  font-size:15px;
 }
 
 button{
-background:#27ae60;
-color:white;
-border:none;
-padding:12px 25px;
-border-radius:5px;
-font-size:16px;
-cursor:pointer;
+  background:#27ae60;
+  color:white;
+  border:none;
+  padding:14px 25px;
+  border-radius:5px;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
 }
 
 button:hover{
-background:#1e8449;
+  background:#1e8449;
 }
 
-input, textarea{
-width:100%;
-padding:12px;
-margin-top:10px;
-border-radius:5px;
-border:1px solid #ccc;
-box-sizing:border-box;
+/* ERGEBNIS */
+
+#ergebnis{
+  margin-top:15px;
+  font-weight:bold;
+  padding:10px;
+  background:#dff0d8;
+  color:#3c763d;
+  border-radius:5px;
 }
 
 /* FOOTER */
 
 footer{
-text-align:center;
-padding:20px;
-background:#ddd;
-margin-top:40px;
-font-size:14px;
+  text-align:center;
+  padding:20px;
+  background:#ddd;
+  margin-top:40px;
+  font-size:14px;
 }
 
 /* MOBILE */
@@ -101,16 +120,16 @@ font-size:14px;
 @media (max-width:600px){
 
 header{
-flex-direction:column;
-text-align:center;
+  flex-direction:column;
+  text-align:center;
 }
 
 header img{
-height:100px;
+  height:100px;
 }
 
 header h1{
-font-size:22px;
+  font-size:22px;
 }
 
 }
@@ -121,24 +140,15 @@ font-size:22px;
 <body>
 
 <header>
-
-<img src="logo_dguvundesign.png" alt="DGUV Undesign Logo">
-
-<h1>DGUV V3 Prüfung in Moers</h1>
-
+  <img src="logo_dguvundesign.png" alt="DGUV Undesign Logo">
+  <h1>DGUV V3 Prüfung in Moers</h1>
 </header>
 
 <section>
 
 <div class="box">
-
 <h2>Warum ist die DGUV V3 Prüfung wichtig?</h2>
-
-<p>
-Unternehmen sind verpflichtet elektrische Geräte regelmäßig prüfen zu lassen.
-Diese Prüfungen erhöhen die Sicherheit im Betrieb und verhindern Unfälle.
-</p>
-
+<p>Unternehmen sind verpflichtet elektrische Geräte regelmäßig prüfen zu lassen. Diese Prüfungen erhöhen die Sicherheit im Betrieb und verhindern Unfälle.</p>
 <ul>
 <li>Computer und Monitore</li>
 <li>Drucker und Bürogeräte</li>
@@ -146,17 +156,11 @@ Diese Prüfungen erhöhen die Sicherheit im Betrieb und verhindern Unfälle.
 <li>Werkzeuge und Maschinen</li>
 <li>Ladegeräte und Netzteile</li>
 </ul>
-
-<p>
-Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
-</p>
-
+<p>Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.</p>
 </div>
 
 <div class="box">
-
 <h2>Unsere Leistungen</h2>
-
 <ul>
 <li>DGUV V3 Prüfung elektrischer Geräte</li>
 <li>Prüfung nach DIN VDE 0701-0702</li>
@@ -164,190 +168,119 @@ Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
 <li>Prüfprotokoll und Dokumentation</li>
 <li>Prüfplaketten für jedes Gerät</li>
 </ul>
-
 </div>
 
 <div class="box">
-
 <h2>Preise</h2>
-
 <p><strong>DGUV V3 Prüfung ab 3,50 € pro Gerät</strong></p>
-
 <ul>
 <li><strong>bis 50 Geräte:</strong> 7,50 € pro Gerät</li>
 <li><strong>51 – 200 Geräte:</strong> 5,00 € pro Gerät</li>
 <li><strong>ab 200 Geräte:</strong> 3,50 € pro Gerät</li>
 </ul>
-
 <p>✔ inklusive Prüfprotokoll</p>
 <p>✔ inklusive Prüfplakette</p>
-
 <p><strong>Anfahrt:</strong></p>
-
 <ul>
 <li>Anfahrt im Raum Moers kostenlos</li>
 <li>Weitere Entfernungen nach Vereinbarung</li>
 </ul>
-
 </div>
 
 <div class="box">
-
 <h2>Preisrechner</h2>
-
 <p>Geben Sie die Anzahl Ihrer Geräte ein:</p>
-
 <input type="number" id="geraete" placeholder="Anzahl Geräte">
-
 <br><br>
-
 <button onclick="preisBerechnen()">Preis berechnen</button>
-
-<p id="ergebnis" style="font-weight:bold;margin-top:15px;"></p>
-
+<p id="ergebnis"></p>
 <p style="font-size:14px;color:#666;">Preis zzgl. möglicher Anfahrt außerhalb von Moers.</p>
-
 </div>
 
 <div class="box">
-
 <h2>DGUV V3 Prüfung in Moers</h2>
-
-<p>
-Wir bieten die professionelle Prüfung elektrischer Geräte für Unternehmen in Moers und Umgebung an.
-Die Prüfung erfolgt nach DGUV Vorschrift 3 und DIN VDE 0701-0702.
-</p>
-
-<p>
-Nach der Prüfung erhalten Sie ein vollständiges Prüfprotokoll sowie eine Prüfplakette
-für jedes geprüfte Gerät.
-</p>
-
+<p>Wir bieten die professionelle Prüfung elektrischer Geräte für Unternehmen in Moers und Umgebung an. Die Prüfung erfolgt nach DGUV Vorschrift 3 und DIN VDE 0701-0702.</p>
+<p>Nach der Prüfung erhalten Sie ein vollständiges Prüfprotokoll sowie eine Prüfplakette für jedes geprüfte Gerät.</p>
 </div>
 
 <div class="box">
-
 <h2>Unverbindliche Anfrage</h2>
-
 <form id="contactForm" action="https://formsubmit.co/dguv.undesign@gmail.com" method="POST">
-
 <input type="text" name="firma" placeholder="Firma" required>
-
 <input type="text" name="name" placeholder="Name" required>
-
 <input type="email" name="email" placeholder="Email" required>
-
 <input type="text" name="geraete" placeholder="Anzahl Geräte">
-
 <textarea name="nachricht" placeholder="Nachricht"></textarea>
-
 <input type="hidden" name="_captcha" value="false">
-
 <br><br>
-
 <button type="submit">Anfrage senden</button>
-
 </form>
-
 <p id="formMessage" style="display:none;color:green;font-weight:bold;margin-top:15px;">
 Vielen Dank für Ihre Anfrage! Wir melden uns schnellstmöglich.
 </p>
-
 </div>
 
 <div class="box">
-
 <h2>Kontakt</h2>
-
 <p>Email: dguv.undesign@gmail.com</p>
 <p>Moers</p>
-
 </div>
 
 <div class="box">
-
 <h2>Impressum</h2>
-
 <p>
 DGUV Undesign<br>
 Inhaber: Andreas Müller<br>
 Moers<br>
 Deutschland
 </p>
-
 <p>Email: dguv.undesign@gmail.com</p>
-
 </div>
 
 <div class="box">
-
 <h2>Datenschutz</h2>
-
-<p>
-Wenn Sie das Kontaktformular nutzen, werden die eingegebenen Daten
-ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
-</p>
-
+<p>Wenn Sie das Kontaktformular nutzen, werden die eingegebenen Daten ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.</p>
 </div>
 
 </section>
 
 <footer>
-
 © 2026 DGUV Undesign
-
 </footer>
 
 <script>
-
 function preisBerechnen(){
-
-let anzahl=document.getElementById("geraete").value;
-
-let preis=0;
-
-if(anzahl<=50){
-preis=anzahl*7.5;
+  let anzahl=document.getElementById("geraete").value;
+  let preis=0;
+  if(anzahl<=50){
+    preis=anzahl*7.5;
+  } else if(anzahl<=200){
+    preis=anzahl*5;
+  } else{
+    preis=anzahl*3.5;
+  }
+  document.getElementById("ergebnis").innerHTML="Geschätzter Preis: "+preis.toFixed(2)+" €";
 }
 
-else if(anzahl<=200){
-preis=anzahl*5;
-}
-
-else{
-preis=anzahl*3.5;
-}
-
-document.getElementById("ergebnis").innerHTML="Geschätzter Preis: "+preis.toFixed(2)+" €";
-
-}
-
+/* Formular */
 const form=document.getElementById("contactForm");
 const message=document.getElementById("formMessage");
 
 form.addEventListener("submit",function(e){
-
-e.preventDefault();
-
-const data=new FormData(form);
-
-fetch(form.action,{
-method:form.method,
-body:data,
-headers:{'Accept':'application/json'}
-})
-
-.then(response=>{
-
-if(response.ok){
-message.style.display="block";
-form.reset();
-}
-
-})
-
+  e.preventDefault();
+  const data=new FormData(form);
+  fetch(form.action,{
+    method:form.method,
+    body:data,
+    headers:{'Accept':'application/json'}
+  })
+  .then(response=>{
+    if(response.ok){
+      message.style.display="block";
+      form.reset();
+    }
+  });
 });
-
 </script>
 
 </body>
