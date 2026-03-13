@@ -5,11 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Undesign | DGUV V3 Prüfung Moers</title>
-
 <meta name="description" content="DGUV V3 Prüfung elektrischer Geräte in Moers und Umgebung. Prüfung nach DIN VDE 0701-0702 inklusive Prüfprotokoll und Prüfplakette.">
 
 <style>
-
 body{
   font-family:Arial, sans-serif;
   margin:0;
@@ -20,7 +18,7 @@ body{
 /* HEADER */
 header{
   background:white;
-  padding:0px 10px;           /* weniger Abstand oben/unten */
+  padding:0px 10px;
   display:flex;
   flex-direction: column;
   justify-content:center;
@@ -29,19 +27,31 @@ header{
 }
 
 header img{
-  max-width:750px;
-  width:95%;
+  max-width:650px;
+  width:90%;
   height:auto;
   display:block;
 }
 
-/* Untertext unter Logo */
 .logo-subtext{
-  color: #000000;       
-  font-size:18px;    
-  text-align: center; 
-  margin-top: 5px;    
+  color: #000000;
+  font-size:18px;
+  text-align: center;
+  margin-top: 5px;
   font-weight: bold;
+}
+
+/* FLEX CONTAINER für die beiden Boxen */
+.flex-container{
+  display:flex;
+  justify-content: space-between;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+.flex-container .box{
+  flex:1;
+  min-width:300px;
 }
 
 /* CONTENT */
@@ -121,7 +131,6 @@ footer{
     max-width:320px;
   }
 }
-
 </style>
 </head>
 
@@ -129,33 +138,35 @@ footer{
 
 <header>
   <img src="undesignlogo.png" alt="Undesign DGUV V3 Prüfung Logo">
-  
+  <div class="logo-subtext">Ihr Ansprechpartner bei DGUV V3 Prüfungen</div>
 </header>
 
 <section>
 
-<div class="box">
-<h2>DGUV V3 Prüfung</h2>
-<p>Unternehmen sind verpflichtet elektrische Geräte regelmäßig prüfen zu lassen. Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.</p>
-<p>Typische Geräte:</p>
-<ul>
-<li>Computer und Monitore</li>
-<li>Drucker</li>
-<li>Kaffeemaschinen</li>
-<li>Werkzeuge</li>
-<li>Ladegeräte</li>
-</ul>
-</div>
+<div class="flex-container">
+  <div class="box">
+    <h2>DGUV V3 Prüfung</h2>
+    <p>Unternehmen sind verpflichtet elektrische Geräte regelmäßig prüfen zu lassen. Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.</p>
+    <p>Typische Geräte:</p>
+    <ul>
+      <li>Computer und Monitore</li>
+      <li>Drucker</li>
+      <li>Kaffeemaschinen</li>
+      <li>Werkzeuge</li>
+      <li>Ladegeräte</li>
+    </ul>
+  </div>
 
-<div class="box">
-<h2>Unsere Leistungen</h2>
-<ul>
-<li>DGUV V3 Geräteprüfung</li>
-<li>Prüfung nach DIN VDE 0701-0702</li>
-<li>Prüfung direkt vor Ort</li>
-<li>Prüfprotokoll</li>
-<li>Prüfplaketten</li>
-</ul>
+  <div class="box">
+    <h2>Unsere Leistungen</h2>
+    <ul>
+      <li>DGUV V3 Geräteprüfung</li>
+      <li>Prüfung nach DIN VDE 0701-0702</li>
+      <li>Prüfung direkt vor Ort</li>
+      <li>Prüfprotokoll</li>
+      <li>Prüfplaketten</li>
+    </ul>
+  </div>
 </div>
 
 <div class="box">
