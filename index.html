@@ -4,12 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DGUV V3 Prüfung Moers | DGUV Undesign</title>
-
+<title>DGUV Undesign | DGUV V3 Prüfung Moers</title>
 <meta name="description" content="DGUV V3 Prüfung elektrischer Geräte in Moers. Prüfung nach DIN VDE 0701-0702 inklusive Prüfprotokoll und Prüfplakette.">
 
 <style>
-
 body{
   font-family: Arial, sans-serif;
   margin:0;
@@ -18,7 +16,6 @@ body{
 }
 
 /* HEADER */
-
 header{
   background:white;
   padding:30px;
@@ -27,6 +24,8 @@ header{
   justify-content:center;
   gap:25px;
   border-bottom:3px solid #27ae60;
+  flex-wrap: wrap;
+  text-align:center;
 }
 
 header img{
@@ -39,8 +38,13 @@ header h1{
   font-size:28px;
 }
 
-/* CONTENT */
+header p{
+  margin:5px 0 0 0;
+  font-size:16px;
+  color:#555;
+}
 
+/* CONTENT */
 section{
   max-width:900px;
   margin:auto;
@@ -68,7 +72,6 @@ h2{
 }
 
 /* INPUT & BUTTONS */
-
 input, textarea{
   width:100%;
   padding:14px;
@@ -95,7 +98,6 @@ button:hover{
 }
 
 /* ERGEBNIS */
-
 #ergebnis{
   margin-top:15px;
   font-weight:bold;
@@ -106,7 +108,6 @@ button:hover{
 }
 
 /* FOOTER */
-
 footer{
   text-align:center;
   padding:20px;
@@ -116,24 +117,18 @@ footer{
 }
 
 /* MOBILE */
-
 @media (max-width:600px){
-
-header{
-  flex-direction:column;
-  text-align:center;
+  header{
+    flex-direction:column;
+    text-align:center;
+  }
+  header img{
+    height:100px;
+  }
+  header h1{
+    font-size:22px;
+  }
 }
-
-header img{
-  height:100px;
-}
-
-header h1{
-  font-size:22px;
-}
-
-}
-
 </style>
 </head>
 
@@ -141,7 +136,10 @@ header h1{
 
 <header>
   <img src="logo_dguvundesign.png" alt="DGUV Undesign Logo">
-  <h1>DGUV V3 Prüfung in Moers</h1>
+  <div>
+    <h1>DGUV Undesign</h1>
+    <p>Prüfung elektrischer Geräte nach DGUV V3 in Moers</p>
+  </div>
 </header>
 
 <section>
