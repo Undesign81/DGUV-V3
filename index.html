@@ -21,16 +21,16 @@ color:#333;
 
 header{
 background:white;
-padding:20px;
+padding:30px;
 display:flex;
 align-items:center;
 justify-content:center;
-gap:20px;
+gap:25px;
 border-bottom:3px solid #27ae60;
 }
 
 header img{
-height:70px;
+height:120px;
 }
 
 header h1{
@@ -105,6 +105,10 @@ flex-direction:column;
 text-align:center;
 }
 
+header img{
+height:100px;
+}
+
 header h1{
 font-size:22px;
 }
@@ -118,12 +122,11 @@ font-size:22px;
 
 <header>
 
-<img src="logo_dguvundesign.png">
+<img src="logo_dguvundesign.png" alt="DGUV Undesign Logo">
 
 <h1>DGUV V3 Prüfung in Moers</h1>
 
 </header>
-
 
 <section>
 
@@ -150,28 +153,19 @@ Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
 
 </div>
 
-
 <div class="box">
 
 <h2>Unsere Leistungen</h2>
 
 <ul>
-
 <li>DGUV V3 Prüfung elektrischer Geräte</li>
-
 <li>Prüfung nach DIN VDE 0701-0702</li>
-
 <li>Prüfung direkt bei Ihnen vor Ort</li>
-
 <li>Prüfprotokoll und Dokumentation</li>
-
 <li>Prüfplaketten für jedes Gerät</li>
-
 </ul>
 
 </div>
-
-
 
 <div class="box">
 
@@ -180,20 +174,22 @@ Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
 <p><strong>DGUV V3 Prüfung ab 3,50 € pro Gerät</strong></p>
 
 <ul>
-
 <li><strong>bis 50 Geräte:</strong> 7,50 € pro Gerät</li>
-
 <li><strong>51 – 200 Geräte:</strong> 5,00 € pro Gerät</li>
-
 <li><strong>ab 200 Geräte:</strong> 3,50 € pro Gerät</li>
-
 </ul>
 
 <p>✔ inklusive Prüfprotokoll</p>
 <p>✔ inklusive Prüfplakette</p>
 
-</div>
+<p><strong>Anfahrt:</strong></p>
 
+<ul>
+<li>Anfahrt im Raum Moers kostenlos</li>
+<li>Weitere Entfernungen nach Vereinbarung</li>
+</ul>
+
+</div>
 
 <div class="box">
 
@@ -209,31 +205,25 @@ Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
 
 <p id="ergebnis" style="font-weight:bold;margin-top:15px;"></p>
 
+<p style="font-size:14px;color:#666;">Preis zzgl. möglicher Anfahrt außerhalb von Moers.</p>
+
 </div>
-
-
 
 <div class="box">
 
 <h2>DGUV V3 Prüfung in Moers</h2>
 
 <p>
-
-Wir bieten die Prüfung elektrischer Geräte für Unternehmen in Moers und Umgebung an.
+Wir bieten die professionelle Prüfung elektrischer Geräte für Unternehmen in Moers und Umgebung an.
 Die Prüfung erfolgt nach DGUV Vorschrift 3 und DIN VDE 0701-0702.
-
 </p>
 
 <p>
-
 Nach der Prüfung erhalten Sie ein vollständiges Prüfprotokoll sowie eine Prüfplakette
 für jedes geprüfte Gerät.
-
 </p>
 
 </div>
-
-
 
 <div class="box">
 
@@ -265,19 +255,14 @@ Vielen Dank für Ihre Anfrage! Wir melden uns schnellstmöglich.
 
 </div>
 
-
-
 <div class="box">
 
 <h2>Kontakt</h2>
 
 <p>Email: dguv.undesign@gmail.com</p>
-
 <p>Moers</p>
 
 </div>
-
-
 
 <div class="box">
 
@@ -294,24 +279,18 @@ Deutschland
 
 </div>
 
-
-
 <div class="box">
 
 <h2>Datenschutz</h2>
 
 <p>
-
 Wenn Sie das Kontaktformular nutzen, werden die eingegebenen Daten
 ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
-
 </p>
 
 </div>
 
-
 </section>
-
 
 <footer>
 
@@ -319,10 +298,7 @@ ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
 
 </footer>
 
-
 <script>
-
-/* Preisrechner */
 
 function preisBerechnen(){
 
@@ -345,9 +321,6 @@ preis=anzahl*3.5;
 document.getElementById("ergebnis").innerHTML="Geschätzter Preis: "+preis.toFixed(2)+" €";
 
 }
-
-
-/* Formular */
 
 const form=document.getElementById("contactForm");
 const message=document.getElementById("formMessage");
