@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -21,30 +22,17 @@ color:#333;
 
 header{
 background:white;
-padding:30px;
+padding:40px 20px;
 display:flex;
-align-items:center;
 justify-content:center;
-gap:25px;
-border-bottom:3px solid #27ae60;
-flex-wrap:wrap;
-text-align:center;
+align-items:center;
+border-bottom:4px solid #27ae60;
 }
 
 header img{
-height:150px;
-}
-
-header h1{
-margin:0;
-color:#0a3d62;
-font-size:34px;
-}
-
-header p{
-margin:5px 0 0 0;
-font-size:18px;
-color:#27ae60;
+max-width:520px;
+width:95%;
+height:auto;
 }
 
 /* CONTENT */
@@ -126,16 +114,8 @@ font-size:14px;
 
 @media (max-width:600px){
 
-header{
-flex-direction:column;
-}
-
 header img{
-height:120px;
-}
-
-header h1{
-font-size:26px;
+max-width:380px;
 }
 
 }
@@ -147,12 +127,7 @@ font-size:26px;
 
 <header>
 
-<img src="undesignlogo.png" alt="Undesign Logo">
-
-<div>
-<h1>Undesign</h1>
-<p>Ihr Ansprechpartner bei DGUV V3 Prüfungen</p>
-</div>
+<img src="undesignlogo.png" alt="Undesign DGUV V3 Prüfung Logo">
 
 </header>
 
@@ -164,15 +139,15 @@ font-size:26px;
 <h2>DGUV V3 Prüfung</h2>
 
 <p>
-Unternehmen sind verpflichtet elektrische Geräte regelmäßig prüfen zu lassen. 
+Unternehmen sind verpflichtet elektrische Geräte regelmäßig prüfen zu lassen.
 Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
 </p>
 
-<p>Beispiele für Geräte:</p>
+<p>Typische Geräte:</p>
 
 <ul>
 <li>Computer und Monitore</li>
-<li>Drucker und Bürogeräte</li>
+<li>Drucker</li>
 <li>Kaffeemaschinen</li>
 <li>Werkzeuge</li>
 <li>Ladegeräte</li>
@@ -219,7 +194,7 @@ Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
 
 <ul>
 <li>Moers kostenlos</li>
-<li>Weitere Entfernung nach Vereinbarung</li>
+<li>Umgebung nach Vereinbarung</li>
 </ul>
 
 </div>
@@ -229,7 +204,7 @@ Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
 
 <h2>Preisrechner</h2>
 
-<p>Geben Sie die Anzahl Ihrer Geräte ein:</p>
+<p>Anzahl Geräte eingeben:</p>
 
 <input type="number" id="geraete" placeholder="Anzahl Geräte">
 
@@ -285,12 +260,10 @@ Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
 <h2>Impressum</h2>
 
 <p>
-
 Undesign<br>
 Inhaber: Andreas Müller<br>
 Moers<br>
 Deutschland
-
 </p>
 
 <p>Email: dguv.undesign@gmail.com</p>
@@ -303,9 +276,7 @@ Deutschland
 <h2>Datenschutz</h2>
 
 <p>
-
 Wenn Sie das Kontaktformular nutzen, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert.
-
 </p>
 
 </div>
@@ -353,6 +324,6 @@ document.getElementById("ergebnis").innerHTML="Geschätzter Preis: "+preis.toFix
 
 </script>
 
-
 </body>
 </html>
+```
