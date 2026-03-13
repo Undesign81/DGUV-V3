@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -19,7 +18,6 @@ body{
 }
 
 /* HEADER */
-
 header{
   background:white;
   padding:2px 10px;
@@ -39,15 +37,14 @@ header img{
 
 /* Untertext unter Logo */
 .logo-subtext{
-  color: black;       
+  color: #000000;       
   font-size:18px;    
   text-align: center; 
   margin-top: 5px;    
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /* CONTENT */
-
 section{
   max-width:900px;
   margin:auto;
@@ -75,7 +72,6 @@ h2{
 }
 
 /* FORM */
-
 input, textarea{
   width:100%;
   padding:14px;
@@ -101,7 +97,6 @@ button:hover{
 }
 
 /* PREISERGEBNIS */
-
 #ergebnis{
   margin-top:15px;
   font-weight:bold;
@@ -112,7 +107,6 @@ button:hover{
 }
 
 /* FOOTER */
-
 footer{
   text-align:center;
   padding:20px;
@@ -122,13 +116,10 @@ footer{
 }
 
 /* MOBILE */
-
 @media (max-width:600px){
-
   header img{
     max-width:320px;
   }
-
 }
 
 </style>
@@ -137,24 +128,16 @@ footer{
 <body>
 
 <header>
-  <img src="undesignlogo3.png" alt="Undesign DGUV V3 Prüfung Logo">
+  <img src="undesignlogo.png" alt="Undesign DGUV V3 Prüfung Logo">
   <div class="logo-subtext">Ihr Ansprechpartner bei DGUV V3 Prüfungen</div>
 </header>
-
 
 <section>
 
 <div class="box">
-
 <h2>DGUV V3 Prüfung</h2>
-
-<p>
-Unternehmen sind verpflichtet elektrische Geräte regelmäßig prüfen zu lassen.
-Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
-</p>
-
+<p>Unternehmen sind verpflichtet elektrische Geräte regelmäßig prüfen zu lassen. Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.</p>
 <p>Typische Geräte:</p>
-
 <ul>
 <li>Computer und Monitore</li>
 <li>Drucker</li>
@@ -162,14 +145,10 @@ Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
 <li>Werkzeuge</li>
 <li>Ladegeräte</li>
 </ul>
-
 </div>
 
-
 <div class="box">
-
 <h2>Unsere Leistungen</h2>
-
 <ul>
 <li>DGUV V3 Geräteprüfung</li>
 <li>Prüfung nach DIN VDE 0701-0702</li>
@@ -177,85 +156,55 @@ Die Prüfung erfolgt nach DGUV Vorschrift 3 sowie DIN VDE 0701-0702.
 <li>Prüfprotokoll</li>
 <li>Prüfplaketten</li>
 </ul>
-
 </div>
 
-
 <div class="box">
-
 <h2>Preise</h2>
-
 <p><strong>DGUV V3 Prüfung ab 3,50 € pro Gerät</strong></p>
-
 <ul>
 <li><strong>bis 50 Geräte:</strong> 7,50 € pro Gerät</li>
 <li><strong>51 – 200 Geräte:</strong> 5,00 € pro Gerät</li>
 <li><strong>ab 200 Geräte:</strong> 3,50 € pro Gerät</li>
 </ul>
-
 <p>✔ inklusive Prüfprotokoll</p>
 <p>✔ inklusive Prüfplakette</p>
-
 <p><strong>Anfahrt</strong></p>
 <ul>
 <li>Moers kostenlos</li>
 <li>Umgebung nach Vereinbarung</li>
 </ul>
-
 </div>
 
-
 <div class="box">
-
 <h2>Preisrechner</h2>
-
 <p>Anzahl Geräte eingeben:</p>
-
 <input type="number" id="geraete" placeholder="Anzahl Geräte">
-
 <br><br>
-
 <button onclick="preisBerechnen()">Preis berechnen</button>
-
 <p id="ergebnis"></p>
-
 </div>
 
-
 <div class="box">
-
 <h2>Unverbindliche Anfrage</h2>
-
 <form action="https://formsubmit.co/dguv.undesign@gmail.com" method="POST">
-
 <input type="text" name="Firma" placeholder="Firma" required>
 <input type="text" name="Name" placeholder="Name" required>
 <input type="email" name="Email" placeholder="Email" required>
 <input type="text" name="Geraete" placeholder="Anzahl Geräte">
 <textarea name="Nachricht" placeholder="Nachricht"></textarea>
 <input type="hidden" name="_captcha" value="false">
-
 <br><br>
-
 <button type="submit">Anfrage senden</button>
-
 </form>
-
 </div>
 
-
 <div class="box">
-
 <h2>Kontakt</h2>
-
 <p>Email: dguv.undesign@gmail.com</p>
 <p>Moers</p>
-
 </div>
 
-
 <div class="box">
-
 <h2>Impressum</h2>
 <p>
 Undesign<br>
@@ -264,33 +213,23 @@ Moers<br>
 Deutschland
 </p>
 <p>Email: dguv.undesign@gmail.com</p>
-
 </div>
 
-
 <div class="box">
-
 <h2>Datenschutz</h2>
-<p>
-Wenn Sie das Kontaktformular nutzen, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert.
-</p>
-
+<p>Wenn Sie das Kontaktformular nutzen, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert.</p>
 </div>
 
 </section>
-
 
 <footer>
 © 2026 Undesign
 </footer>
 
-
 <script>
-
 function preisBerechnen(){
   let anzahl=document.getElementById("geraete").value;
   let preis=0;
-
   if(anzahl<=50){
     preis=anzahl*7.5;
   }
@@ -300,12 +239,9 @@ function preisBerechnen(){
   else{
     preis=anzahl*3.5;
   }
-
   document.getElementById("ergebnis").innerHTML="Geschätzter Preis: "+preis.toFixed(2)+" €";
 }
-
 </script>
 
 </body>
 </html>
-```
